@@ -56,8 +56,7 @@ class _ExampleThreeState extends State<ExampleThree> {
                                         snapshot.data![index].name.toString()),
                                 ReusbaleRow(
                                     name: "UserName",
-                                    value: snapshot.data![index].username
-                                        .toString()),
+                                    value: snapshot.data![index].username.toString()),
                                 ReusbaleRow(
                                     name: "Email",
                                     value:
@@ -66,7 +65,7 @@ class _ExampleThreeState extends State<ExampleThree> {
                                     name: "address",
                                     value: snapshot.data![index].address!.city
                                             .toString() +
-                                        snapshot.data![index].address!.geo!.lat
+                                            snapshot.data![index].address!.geo!.lat
                                             .toString()),
                               ],
                             ),
