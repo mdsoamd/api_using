@@ -53,7 +53,6 @@ class _LastExampleScreenState extends State<LastExampleScreen> {
                                   backgroundImage: NetworkImage(snapshot.data!.data![index].shop!.image.toString()),
                                 ),
                               ),
-                              
                               Container(
                                 height: MediaQuery.of(context).size.height * .3,
                                 width: MediaQuery.of(context).size.width * 1,
@@ -70,12 +69,7 @@ class _LastExampleScreenState extends State<LastExampleScreen> {
                                               borderRadius:BorderRadius.circular(10),
                                               image: DecorationImage(
                                                   fit: BoxFit.cover,
-                                                  image: NetworkImage(snapshot
-                                                      .data!
-                                                      .data![index]
-                                                      .images![position]
-                                                      .url
-                                                      .toString()))),
+                                                  image: NetworkImage(snapshot.data!.data![index].images![position] .url.toString()))),
                                         ),
                                       );
                                     }),
